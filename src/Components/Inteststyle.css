@@ -1,0 +1,36 @@
+.slider{
+    padding: 70px 0px;
+    .h5{
+      color: #800000;
+    }
+    .content{
+      height: 100%;
+      display:flex;
+      align-items:self-end;
+      padding: 35px 35px;
+      .p{
+        font-size: 22px;
+      }
+    }
+    .img{
+      flex: 1;
+      min-height: 320px;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    background-color: green;
+  }
+  .child{
+    flex: 1;
+  }
+  .square-img{
+    width: 100px;
+    height: 100px;
+    /* aspect-ratio: 9/16; */
+  }
