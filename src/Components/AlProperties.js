@@ -15,7 +15,29 @@ import {
 // import "./Inteststyle.css";
 
 export default function AlProperties() {
-  const element = [1, 2, 3,4];
+  let jsonarray = [{
+id:1,
+title:"card1",
+description:"This is a wider card with supporting text below as a natural lead in to additional content. This content is a little bit longer.",
+Image:"https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp",
+small:"Last updated 3 ims ago"
+  },
+  {
+    id:1,
+    title:"card2",
+    description:"This is a wider card with supporting text below as a natural lead in to additional content. This content is a little bit longer.",
+    Image:"https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp",
+    small:"Last updated 3 ims ago"
+  },
+  {
+    id:3,
+    title:"card1",
+    description:"This is a wider card with supporting text below as a natural lead in to additional content. This content is a little bit longer.",
+    Image:"https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp",
+    small:"Last updated 3 ims ago"
+  }
+
+  ];
   return (
     
     <div style={{ display: "flex", flexDirection: "column", gap: "100px" }}>
@@ -42,8 +64,8 @@ export default function AlProperties() {
         </MDBCard>
       </MDBCol>
       <div>
-        {element.map((item) => (
-          <div key={item}>
+        {jsonarray.map((item) => (
+          // <div key={item.id}>
           <MDBCard style={{ maxWidth: "580px" }}>
             <MDBRow className="propty px-md-3 g-0">
               <MDBCol md="4">
@@ -73,7 +95,7 @@ export default function AlProperties() {
               </div>
             </MDBRow>
           </MDBCard>
-          </div>
+          // </div>
         ))}
       </div>
 
