@@ -1,0 +1,22 @@
+.card{
+/* margin-left: auto;
+margin-right: auto;
+align-items: center;
+  justify-content: center; */
+
+/* display: flex; */
+/* flex-direction: row; */
+margin-left: 500px; 
+margin-right: auto;
+/* align-items: center; */
+/* justify-content: center; */
+width: 500%;  
+ height: 100%; 
+}
+.bodyy{
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 100px;
+}

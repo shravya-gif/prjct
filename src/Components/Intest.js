@@ -19,7 +19,7 @@ export default function Intest() {
         <MDBCard
           background="dark"
           className="text-white"
-          style={{ maxWidth: "450px"}}
+          style={{ maxWidth: "450px" }}
         >
           <MDBCardImage
             overlay
@@ -88,35 +88,33 @@ export default function Intest() {
             alt="..."
           >
             {/* <div display flex> */}
-               {/* <Img flex 1> */}
-               {/* <div flex 1> */}
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            {/* <Img flex 1> */}
+            {/* <div flex 1> */}
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             {/* <div> */}
-
-            
           </MDBCarouselItem>
           <MDBCarouselItem
-            className="img w-100 h-100 d-block" 
+            className="img w-100 h-100 d-block"
             style={{ maxHeight: "450px" }}
             itemId={2}
             // src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
             alt="..."
           >
-            <div
-              className="parent">
-                <img className="child square-img" src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg">
-                
-                </img>
-                <div>
+            <div className="parent">
+              <img
+                className="child square-img"
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
+              ></img>
+              <div>
                 <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </div>
             {/* <div className="content text-align-tl">
             {/* <MDBCarousel.Caption> */}
-           
-            {/* </div> */} 
+
+            {/* </div> */}
             {/* </MDBCarousel.Caption> */}
           </MDBCarouselItem>
 

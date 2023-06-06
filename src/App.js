@@ -1,5 +1,6 @@
 import React from "react";
-import Intest from "./Components/Intest";
+import AlProperties from "./Components/AlProperties";
+// import Intest from "./Components/Intest";
 // import InvestmentP from "./Components/InvestmentP";
 // import Signin from "./Components/Signin";
 // import Signup from "./Components/Signup"
@@ -9,7 +10,8 @@ import Intest from "./Components/Intest";
 function App(){
   return(
  <div className="App"> 
- <Intest/>
+ <AlProperties/>
+ {/* <Intest/> */}
  {/* <InvestmentP/> */}
   {/* <Signup/> */}
   {/* <Signin/> */}
