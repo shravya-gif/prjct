@@ -15,8 +15,11 @@ import {
 // import "./Inteststyle.css";
 
 export default function AlProperties() {
+  const element = [1, 2, 3,4];
   return (
-    <MDBRow className=" p-3 ">
+    
+    <div style={{ display: "flex", flexDirection: "column", gap: "100px" }}>
+      
       <MDBCol md="4">
         <MDBCard
           background="dark"
@@ -38,7 +41,96 @@ export default function AlProperties() {
           </MDBCardOverlay>
         </MDBCard>
       </MDBCol>
+      <div>
+        {element.map((item) => (
+          <div key={item}>
+          <MDBCard style={{ maxWidth: "580px" }}>
+            <MDBRow className="propty px-md-3 g-0">
+              <MDBCol md="4">
+                <MDBCardImage
+                  src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp"
+                  alt="..."
+                  fluid
+                />
+              </MDBCol>
+              <div className="bodyy">
+          
+                <MDBCol className="md-8">
+                  <MDBCardBody>
+                    <MDBCardTitle>{item}</MDBCardTitle>
+                    <MDBCardText>
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </MDBCardText>
+                    <MDBCardText>
+                      <small className="text-muted">
+                        Last updated 3 mins ago
+                      </small>
+                    </MDBCardText>
+                  </MDBCardBody>
+                </MDBCol>
+              </div>
+            </MDBRow>
+          </MDBCard>
+          </div>
+        ))}
+      </div>
 
+      {/* <MDBCard style={{ maxWidth: "580px" }}>
+        <MDBRow className="propty px-md-3 g-0">
+          <MDBCol md="4">
+            <MDBCardImage
+              src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp"
+              alt="..."
+              fluid
+            />
+          </MDBCol>
+          <div className="bodyy">
+            <MDBCol className="md-8">
+              <MDBCardBody>
+                <MDBCardTitle>Card1 title</MDBCardTitle>
+                <MDBCardText>
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </MDBCardText>
+                <MDBCardText>
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCol>
+          </div>
+        </MDBRow>
+      </MDBCard>
+
+      <MDBCard style={{ maxWidth: "580px" }}>
+        <MDBRow className="propty px-md-3 g-0">
+          <MDBCol md="4">
+            <MDBCardImage
+              src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp"
+              alt="..."
+              fluid
+            />
+          </MDBCol>
+
+          <div className="bodyy">
+            <MDBCol className="md-8">
+              <MDBCardBody>
+                <MDBCardTitle>Card2 title</MDBCardTitle>
+                <MDBCardText>
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </MDBCardText>
+                <MDBCardText>
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCol>
+          </div>
+        </MDBRow>
+      </MDBCard>
       <MDBCard style={{ maxWidth: "580px" }}>
         <MDBRow className="propty px-md-3 g-0">
           <MDBCol md="4">
@@ -65,7 +157,6 @@ export default function AlProperties() {
           </div>
         </MDBRow>
       </MDBCard>
-
       <MDBCard style={{ maxWidth: "580px" }}>
         <MDBRow className="propty px-md-3 g-0">
           <MDBCol md="4">
@@ -90,64 +181,8 @@ export default function AlProperties() {
               </MDBCardBody>
             </MDBCol>
           </div>
-          <MDBCard style={{ maxWidth: "580px" }}>
-            <MDBRow className="propty px-md-3 g-0">
-              <MDBCol md="4">
-                <MDBCardImage
-                  src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp"
-                  alt="..."
-                  fluid
-                />
-              </MDBCol>
-              <div className="bodyy">
-                <MDBCol className="md-8">
-                  <MDBCardBody>
-                    <MDBCardTitle>Card title</MDBCardTitle>
-                    <MDBCardText>
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </MDBCardText>
-                    <MDBCardText>
-                      <small className="text-muted">
-                        Last updated 3 mins ago
-                      </small>
-                    </MDBCardText>
-                  </MDBCardBody>
-                </MDBCol>
-              </div>
-            </MDBRow>
-          </MDBCard>
-          <MDBCard style={{ maxWidth: "580px" }}>
-            <MDBRow className="propty px-md-3 g-0">
-              <MDBCol md="4">
-                <MDBCardImage
-                  src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp"
-                  alt="..."
-                  fluid
-                />
-              </MDBCol>
-              <div className="bodyy">
-                <MDBCol className="md-8">
-                  <MDBCardBody>
-                    <MDBCardTitle>Card title</MDBCardTitle>
-                    <MDBCardText>
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </MDBCardText>
-                    <MDBCardText>
-                      <small className="text-muted">
-                        Last updated 3 mins ago
-                      </small>
-                    </MDBCardText>
-                  </MDBCardBody>
-                </MDBCol>
-              </div>
-            </MDBRow>
-          </MDBCard>
         </MDBRow>
-      </MDBCard>
-    </MDBRow>
+      </MDBCard> */}
+    </div>
   );
 }

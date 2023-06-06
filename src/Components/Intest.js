@@ -11,6 +11,7 @@ import {
   MDBCarouselItem,
 } from "mdb-react-ui-kit";
 import "./Inteststyle.css";
+import { MDBBox } from "mdbreact";
 
 export default function Intest() {
   return (
@@ -79,56 +80,67 @@ export default function Intest() {
       </MDBCol>
       <h1>View more assets</h1>
       <div className="slider p-5">
-        <MDBCarousel showControls showIndicators dark fade>
-          <MDBCarouselItem
-            className="w-50 d-block"
-            style={{ maxHeight: "450px" }}
-            itemId={1}
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(19).jpg"
-            alt="..."
-          >
-            {/* <div display flex> */}
-            {/* <Img flex 1> */}
-            {/* <div flex 1> */}
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            {/* <div> */}
-          </MDBCarouselItem>
-          <MDBCarouselItem
+        <MDBCarousel showControls showIndicators dark interval={500000}>
+         
+        <MDBCarouselItem
             className="img w-100 h-100 d-block"
-            style={{ maxHeight: "450px" }}
-            itemId={2}
-            // src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
-            alt="..."
+            itemId={1}
+            src={undefined}
           >
-            <div className="parent">
+            <div
+              className="parent"
+            >
               <img
                 className="child square-img"
                 src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
+                alt=""
               ></img>
-              <div>
+              <div className="child">
                 <h5>Second slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
-            {/* <div className="content text-align-tl">
-            {/* <MDBCarousel.Caption> */}
+          </MDBCarouselItem>
 
-            {/* </div> */}
-            {/* </MDBCarousel.Caption> */}
+
+          <MDBCarouselItem
+            className="img w-100 h-100 d-block"
+            itemId={2}
+            src={undefined}
+          >
+            <div
+              className="parent"
+            >
+              <img
+                className="child square-img"
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
+                alt=""
+              ></img>
+              <div className="child">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
           </MDBCarouselItem>
 
           <MDBCarouselItem
-            className="w-50 d-block"
-            style={{ maxHeight: "450px" }}
+            className="img w-100 h-100 d-block"
             itemId={3}
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(40).jpg"
-            alt="..."
+            src={undefined}
           >
-            <h5>Third slide label</h5>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <div
+              className="parent"
+            >
+              <img
+                className="child square-img"
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
+                alt=""
+              ></img>
+              <div className="child">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
           </MDBCarouselItem>
         </MDBCarousel>
       </div>
